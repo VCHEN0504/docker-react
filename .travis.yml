@@ -7,6 +7,7 @@ services:
 before_install:
   - docker build -t vivche/docker-react -f Dockerfile.dev .
 
+
 script:
   - docker run -e CI=true vivche/docker-react npm run test
 
