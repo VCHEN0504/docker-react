@@ -14,10 +14,10 @@ script:
 deploy:
   provider: elasticbeanstalk
   region: 'us-east-1'
-  app: 'docker'
-  env: 'docker-env'
+  app: 'vivche-docker'
+  env: 'vivchedocker-env'
   bucket_name: 'elasticbeanstalk-us-east-1-842323604083'
-  bucket_path: 'docker'
+  bucket_path: 'vivche-docker'
   on:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
